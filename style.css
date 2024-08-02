@@ -1,0 +1,74 @@
+/* Restablecer márgenes y rellenos para todos los elementos */
+* {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar rellenos */
+    box-sizing: border-box; /* Usar el modelo de caja para todos los elementos */
+}
+
+/* Estilo básico del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+    background-color: #F2F0D8;/*Fondo de la pagina web*/
+}
+
+/* Estilo de la cabecera */
+header {
+    background-color: red; /* Color de fondo oscuro */
+    padding: 20px 20px; /* Espaciado interno */
+    color: #F2F0D8; /* Color de texto blanco */
+}
+
+/* Contenedor de la barra de navegación */
+nav {
+    display: flex; /* Usar flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear elementos en el centro verticalmente */
+}
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+/* Titulo de la pagina */
+.titulo {
+    align-content: center;
+    display: center;
+    justify-self:center;
+    font-size: 25px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+p{
+  border: red 2px solid;
+  margin-left:155px;
+  margin-right:155px;
+  justify-items: auto;
+}    
+/* Estilo de la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Eliminar viñetas de la lista */
+    display: flex; /* Usar flexbox para la disposición en línea */
+}
+/* Estilo de los elementos de la lista */
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre enlaces */
+}
+
+/* Estilo de los enlaces */
+.nav-links a {
+    color: #F2F0D8; /* Color de texto blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Efecto hover en los enlaces */
+.nav-links a:hover {
+    color: #A65729; /* Cambiar a color tomate al pasar el ratón */
+}
+/* Estilos específicos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+}
+    
