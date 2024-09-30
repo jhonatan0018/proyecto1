@@ -1,102 +1,348 @@
 /* Restablecer márgenes y rellenos para todos los elementos */
-    * {
-        margin: 0; /* Eliminar márgenes */
-        padding: 0; /* Eliminar rellenos */
-        box-sizing: border-box; /* Usar el modelo de caja para todos los elementos */
+* {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar rellenos */
+    box-sizing: border-box; /* Usar el modelo de caja para todos los elementos */
+}
+
+/* Estilo básico del cuerpo */
+body, p {
+    font-family: "Roboto Serif", serif; /* Fuente por defecto */
+    font-size: 20px;
+    background-color: #012840; /* Fondo de la página web */
+    color: #F5F4E1;
+}
+
+h1 {
+    text-align: center; /* Titulos centrados */
+    font-size: 25px;
+}
+
+/* Estilo de la cabecera */
+header {
+    background-color: #011526; /* Color de fondo oscuro */
+    padding: 30px 30px; /* Espaciado interno */
+    color: white; /* Color de texto blanco */
+    text-align: center;
+}
+
+/* Contenedor de la barra de navegación */
+nav {
+    display: flex; /* Usar flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear elementos en el centro verticalmente */
+}
+
+/* Titulo de la pagina */
+.titulo {
+    align-content: center;
+    display: center;
+    justify-self: center;
+    font-size: 30px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-items: auto;
+}
+
+section {
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-items: auto;
+    text-align: justify;
+}
+
+/* Estilo de la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Eliminar viñetas de la lista */
+    display: flex; /* Usar flexbox para la disposición en línea */
+}
+
+/* Estilo de los elementos de la lista */
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre enlaces */
+}
+
+/* Estilo de los enlaces */
+.nav-links  {
+    color:  #F2F0D8; /* Color de texto blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Efecto hover en los enlaces */
+.nav-links li:hover {
+    color: #20638C; /* Cambiar a color de los links */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container,
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    
-    /* Estilo básico del cuerpo */
-    body {
-        font-family: Arial, sans-serif; /* Fuente por defecto */
-        background-color: #F2F0D8;/Fondo de la pagina web/
-    }
-    
-    /* Estilo de la cabecera */
-    header {
-        background-color: rgba(17, 10, 2, 0.938); /* Color de fondo oscuro */
-        padding: 20px 20px; /* Espaciado interno */
-        color: #F2F0D8; /* Color de texto blanco */
-    }
-    .slider-frame{
-       width: 1200px;
-       height: auto;
-       margin: 50 px auto 0;
-       overflow: hidden;
-       animation: slide 15s infinite;
-    }
-    .slider-frame ul{
-        display: flex;
-        padding: 0;
-        width: 400%;
-    }
-    .slider-frame li{
-        list-style: none;
-        width: 100%;
-    }
-    .slider-frame img{
-        width: 100%;
-    }
-    @keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
-    }
-    
-    /* Contenedor de la barra de navegación */
-    nav {
-        display: flex; /* Usar flexbox para la disposición */
-        justify-content: space-between; /* Espacio entre elementos */
-        align-items: center; /* Alinear elementos en el centro verticalmente */
-    }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-    }
-    /* Titulo de la pagina */
-    .titulo {
-        align-content: center;
-        display: center;
-        justify-self:center;
-        font-size: 25px; /* Tamaño de fuente grande */
-        font-weight: bold; /* Texto en negrita */
-        margin-left: auto;
-        margin-right: auto;
+
+    .nav-links {
+        flex-direction: column;
         align-items: center;
     }
-    section{
-      border: red 2px solid;
-      margin-left:155px;
-      margin-right:155px;
-      justify-items: auto;
-    }    
-    /* Estilo de la lista de enlaces de navegación */
-    .nav-links {
-        list-style: none; /* Eliminar viñetas de la lista */
-        display: flex; /* Usar flexbox para la disposición en línea */
-    }
-    /* Estilo de los elementos de la lista */
+
     .nav-links li {
-        margin-left: 20px; /* Espaciado entre enlaces */
+        margin-left: 0;
+        margin-bottom: 10px;
     }
-    
-    /* Estilo de los enlaces */
-    .nav-links a {
-        color: #F2F0D8; /* Color de texto blanco */
-        text-decoration: none; /* Eliminar subrayado */
-        font-size: 18px; /* Tamaño de fuente */
-        transition: color 0.3s ease; /* Transición suave para cambios de color */
+
+    .titulo {
+        font-size: 24px;
     }
-    
-    /* Efecto hover en los enlaces */
-    .nav-links a:hover {
-        color: #A65729; /* Cambiar a color tomate al pasar el ratón */
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
-    /* Estilos específicos para pantallas pequeñas */
-    @media screen and (max-width: 768px) {
+
+    form {
+        width: 100%;
     }
+
+    .slider-box {
+        width: 100%;
+    }
+}
+
+.slider-box {
+    margin-top: 25px;
+    width: 1113px;
+    height: auto;
+    margin: 0% auto;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%; /* 4 imágenes, cada una ocupa el 100% del ancho del contenedor */
+    animation: slide 12s infinite;
+}
+
+.slider-box li {
+    width: 25%; /* Cada elemento `li` ocupa un 25% del ancho total del `ul` */
+    list-style: none;
+}
+
+.slider-box img {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { margin-left: 0%; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0%; } /* Regresa al inicio para repetir */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra las columnas en el contenedor */
+}
+
+/* Cada galería individual */
+div.galeria {
+    background-color: #012840;
+    box-sizing: border-box; /* Asegura que el padding y border no aumenten el ancho */
+    margin: 10px;
+    border: 5px solid #20638C;
+    width: 350px;
+}
+
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: justify;
+    color: #F5F4E1;
+}
+
+ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    margin-bottom: 10px;
+}
+
+/* Aqui comienza el formulario de contacto */
+/* Contenedor que rodea el formulario */
+#contacto {
+    background: linear-gradient(
+        180deg,
+        rgba(37, 34, 63, 1) 0%,
+        rgba(31, 61, 98, 1) 50%,
+        rgba(35, 40, 72, 1) 100%
+    ); /* Fondo del formulario */
+    max-width: 74%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 20vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+}
+
+.contacto {
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+.mapa {
+    padding: 10px;
+    border-radius: 15px;
+    width: 1110px;
+    height: 500px;
+    margin: 0 auto; /* Centra horizontalmente en un contenedor bloque */
+    display: block; /* Cambia a bloque para usar margin auto */
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+    border-radius: 15px;
+    width: 800px;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 30px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #011526;
+    border: 2px solid #20638C;
+    color: white;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+.form-text {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-text a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    width: auto;
+    display: inline-flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    background-color: #012840;
+    box-shadow: 0 0 20px #20638C;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #20638C;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+.footer {
+    margin-top: 30px;
+    background-color:#011526;
+    padding: 20px 0;
+}
+.footer-row {
+    background-color: #011526;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%; /* Ajusta el ancho según sea necesario */
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #20638C;
+    padding-bottom: 10px;
+}
+
+.footer-links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color:#FFFFFF;
+    padding-left: 6PX;
+}
