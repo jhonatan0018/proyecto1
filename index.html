@@ -1,68 +1,361 @@
-html lang="es"> <!-- Inicio del documento HTML, con idioma español -->
+<html lang="es"> <!-- Inicio del documento HTML, con idioma español -->
 <head> <!-- Contenedor de metadatos y enlaces -->
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista en dispositivos móviles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style.css "> <!-- Enlace al archivo CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
     <title>Biodiversidad En Cundinamarca</title> <!-- Título de la página -->
-</head>
 
 <body> <!-- Cuerpo del documento -->
     <header> <!-- Cabecera del sitio -->
        <nav> <!-- Contenedor de la barra de navegación -->
            <div class="titulo">Biodiversidad en Cundinamarca</div> <!-- Logo del sitio -->
-           <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Checkbox oculto para activar el menú en móviles -->
+         <!-- Checkbox oculto para activar el menú en móviles -->
            <ul class="nav-links"> <!-- Lista de enlaces de navegación -->
-               <li><a href="#introduccion">Introducción</a></li> <!-- Enlace a la sección de Introducción -->
-               <li><a href="#fauna">Fauna</a></li> <!-- Enlace a la sección Sobre Nosotros -->
-               <li><a href="#flora">Flora</a></li> <!-- Enlace a la sección Servicios -->
-               <li><a href="#contact">Contacto</a></li> <!-- Enlace a la sección Contacto -->
+               <li id="nav-introduccion">Introducción</li> <!-- Enlace a la sección de Introducción -->
+               <li id="nav-fauna">Fauna</li> <!-- Enlace a la sección Sobre Nosotros -->
+               <li id="nav-flora">Flora</li> <!-- Enlace a la sección Servicios -->
+               <li id="nav-contacto">Contacto</li> <!-- Enlace a la sección Contacto -->
            </ul>
        </nav>
    </header>
-<div>
-
-                <section id="Introduccion">
-                    <div class="slider-frame">
+                        <div class="slider-box">
                         <ul>
-                            <li><img src="./imagenes/fondo1.png" alt="Imagen colibri"></li>
-                            <li><img src="./imagenes/ colibri.png"></li>
-                            <li><img src="./imagenes/fondo.png"></li>
-
+                            <li><img src="./img/imagen1.png" alt="Imagen colibri"></li>
+                            <li><img src="./img/imagen2.png" alt="imagen oso"></li>
+                            <li><img src="./img/imagen3.png" alt="imagen gavilan"></li>
+                            <li><img src="./img/imagen4.png" alt="imagen gavilan"></li>
                         </ul>
                     </div>
-                    <img id="img" src="../imagenes/fondo2.png">
                     <br>
-                    <h1 class="titulo">Introducción </h1>
                 </br>
+                <section id="introduccion">
+                    <h1>Introducción</h1>
+                    <br>
                     <p>
                 Cundinamarca, en el corazón de Colombia, alberga una rica
                 biodiversidad con ecosistemas que van desde páramos hasta bosques andinos.
-                Este proyecto busca<br> documentar las especies de flora y fauna de la región,
+                Este proyecto busca documentar las especies de flora y fauna de la región,
                 evaluar su estado de conservación y desarrollar estrategias sostenibles para proteger estos recursos naturales.
                 Involucrando a las comunidades locales y otros actores clave, el proyecto pretende aumentar la conciencia sobre
                 la importancia de preservar la biodiversidad y fomentar prácticas de conservación en Cundinamarca.</p>
-                    </section>
-                    <section id ="fauna">
+                <br>
+                </section>   
+                <section id ="fauna">
                         <h1>Fauna</h1>
+                        <br>
                         <P>
-                            Cundinamarca, una región ubicada en el centro de Colombia, cuenta con una fauna diversa y rica, influenciada por su variada geografía que incluye montañas,
-                            valles y páramos. Entre los animales más representativos se encuentran especies como el oso de anteojos, el venado de cola blanca y el armadillo, que habitan
-                            en las zonas montañosas y bosques andinos. Además, la región es hogar de una gran variedad de aves, como el cóndor de los Andes y el colibrí, siendo un paraíso
-                            para los observadores de aves. Los ecosistemas acuáticos también albergan especies como la rana de cristal y el bagre, contribuyendo a la biodiversidad del departamento.
-                            La conservación de estos hábitats es crucial para mantener el equilibrio ecológico y proteger la riqueza natural de Cundinamarca.<p>
+                Cundinamarca, una región ubicada en el centro de Colombia, cuenta con una fauna diversa y rica, influenciada por su variada geografía que incluye montañas,
+                valles y páramos. Entre los animales más representativos se encuentran especies como el oso de anteojos, el venado de cola blanca y el armadillo, que habitan
+                en las zonas montañosas y bosques andinos. Además, la región es hogar de una gran variedad de aves, como el cóndor de los Andes y el colibrí, siendo un paraíso
+                para los observadores de aves. Los ecosistemas acuáticos también albergan especies como la rana de cristal y el bagre, contribuyendo a la biodiversidad del departamento.
+                La conservación de estos hábitats es crucial para mantener el equilibrio ecológico y proteger la riqueza natural de Cundinamarca.<p>
+                        <br>     
                         </section>
+                        <h1>Aves</h1>
+                        <br>
+                        <section class="content">
+                        <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave1.png" alt="Colibri" width="120" height="120">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                        <li><strong>Colibri</strong>
+                                        <br>
+                                        <br>
+                                        <li><strong>Tamaño:</strong> Muy pequeñas</li>
+                                        <li><strong>Colores:</strong> Brillantes</li>
+                                        <li><strong>Habilidad:</strong> Capacidad de volar en todas direcciones</li>
+                                        <li><strong>Alimentación:</strong> Néctar</li>
+                                        <li><strong>Raza:</strong> Trochilidae (familia de los colibríes)</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave2.png" alt="Copeton" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Copeton</strong>
+                                            <br>
+                                            <br>
+                                            <li><strong>Tamaño:</strong> Pequeñas</li>
+                                            <li><strong>Colores:</strong> Gris y marrón con un copete distintivo</li>
+                                            <li><strong>Habilidad:</strong> Adaptación a áreas urbanas</li>
+                                            <li><strong>Alimentación:</strong> Semillas e insectos</li>
+                                            <li><strong>Raza:</strong> Passeridae (familia de los gorriones)</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave3.png" alt="Carpintero" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <ul>
+                                                <li><strong>Carpintero</strong>
+                                                <br>
+                                                 <br>
+                                            <li><strong>Tamaño:</strong> Mediano</li>
+                                            <li><strong>Colores:</strong> Generalmente negro, blanco y rojo</li>
+                                            <li><strong>Habilidad:</strong> Perforar la corteza de los árboles con su pico</li>
+                                            <li><strong>Alimentación:</strong> Insectos encontrados bajo la corteza</li>
+                                            <li><strong>Raza:</strong> Picidae</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave4.png" alt="Turpial" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                        <li><strong>Turpial</strong>
+                                        <br>
+                                        <br>
+                                        <li><strong>Nombre Común:</strong> Turpial</li>
+                                        <li><strong>Tamaño:</strong> Mediano</li>
+                                        <li><strong>Plumaje:</strong> Generalmente amarillo y negro</li>
+                                        <li><strong>Habilidad:</strong> Canto melodioso</li>
+                                        <li><strong>Alimentación:</strong> Frutos, insectos y pequeños animales</li>
+                                        <li><strong>Raza:</strong> Icteridae</li>
+                                    </ul>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave5.png" alt="Mirla Patinaranja" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Mirla Patinaranja</strong>
+                                            <br>
+                                            <br>
+                                            <li><strong>Tamaño:</strong> Mediano</li>
+                                            <li><strong>Plumaje:</strong> Oscuro con flancos anaranjados o rufos</li>
+                                            <li><strong>Habilidad:</strong> Canto melodioso</li>
+                                            <li><strong>Alimentación:</strong> Frutos e insectos</li>
+                                            <li><strong>Raza:</strong> Turdidae</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  </div>
+
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave6.png" alt="Eufonia" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Eufonia</strong>
+                                            <br>
+                                            <br>
+                                            <li><strong>Tamaño:</strong> Pequeños</li>
+                                            <li><strong>Colores:</strong> Plumaje colorido</li>
+                                            <li><strong>Habilidad:</strong> Canto melodioso</li>
+                                            <li><strong>Alimentación:</strong> Semillas, frutos e insectos</li>
+                                            <li><strong>Raza:</strong> Fringillidae</li>
+                                          </ul>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </section>
+                        <br>
+                        <br>
                         <section id ="flora">
                             <h1>Flora</h1>
+                            <br>
                             <P>
-                                posee una flora rica y diversa, gracias a su variada topografía y clima. Esta región alberga una mezcla de ecosistemas
-                                que van desde los páramos hasta las selvas tropicales, cada uno con su propio conjunto de plantas características.
-                                En los páramos, se encuentran especies adaptadas a las bajas temperaturas y la alta radiación solar, como los frailejones
-                                y las plantas almohadilladas. En las zonas más bajas y cálidas, la vegetación es más exuberante, con abundantes bosques de
-                                niebla que están llenos de helechos, bromelias y orquídeas. Además, los cultivos de flores ornamentales, como las rosas y
-                                los claveles, son prominentes debido a las condiciones favorables para la floricultura, lo que hace de Cundinamarca una
-                                región vital tanto ecológica como económicamente para Colombia.
+                posee una flora rica y diversa, gracias a su variada topografía y clima. Esta región alberga una mezcla de ecosistemas
+                que van desde los páramos hasta las selvas tropicales, cada uno con su propio conjunto de plantas características.                                En los páramos, se encuentran especies adaptadas a las bajas temperaturas y la alta radiación solar, como los frailejones
+                y las plantas almohadilladas. En las zonas más bajas y cálidas, la vegetación es más exuberante, con abundantes bosques de
+                niebla que están llenos de helechos, bromelias y orquídeas. Además, los cultivos de flores ornamentales, como las rosas y
+                los claveles, son prominentes debido a las condiciones favorables para la floricultura, lo que hace de Cundinamarca una
+                región vital tanto ecológica como económicamente para Colombia.
+                </section>
                                 </div>
-                            </main>
+                                <br>
+
+                                <h1>Plantas</h1>
+                        <br>
+                        <section class="content">
+                        <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta1.png" alt="Frailejon" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Frailejón</strong>
+                                            <br>
+                                            <br>
+                                            <li><strong>Descripción:</strong> Planta emblemática de los páramos colombianos, adaptada a climas fríos y húmedos.</li>
+                                            <li><strong>Importancia:</strong> Clave en la regulación hídrica de los ecosistemas de páramo, capturando y almacenando agua.</li>
+                                          </li>
+                                            </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta2.png" alt="Caña de Azucar" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Caña de azúcar (Saccharum officinarum)</strong>
+                                            <br>
+                                            <br>
+                                            <li><strong>Descripción:</strong> Planta tropical alta con tallos gruesos y jugosos.</li>
+                                            <li><strong>Importancia:</strong> Principal fuente de producción de panela, un producto tradicional colombiano, y se utiliza para la producción de azúcar.</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta3.png" alt="Chusque" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Chusque (Chusquea spp.)</strong>
+                                                <br>
+                                                <br>
+                                                <li><strong>Descripción:</strong> Tipo de bambú nativo de los Andes, que crece en suelos húmedos.</li>
+                                                <li><strong>Importancia:</strong> Usado en la construcción, artesanías, y estabilización de suelos, además de proveer hábitat para la fauna.</li>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta4.png" alt="Guadua1" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Guadua (Guadua angustifolia)</strong>
+                                                <br>
+                                                <br>
+                                                <li><strong>Descripción:</strong> Una especie de bambú que crece en climas cálidos y húmedos.</li>
+                                                <li><strong>Importancia:</strong> Utilizada en construcción sostenible, fabricación de muebles y artesanías, y es un símbolo de la arquitectura ecológica en Colombia.</li>                           
+                                              </li>
+                                    </ul>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta5.png" alt="Orquidea" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Orquídeas (Orchidaceae)</strong>
+                                                <br>
+                                                <br>                                               
+                                                <li><strong>Descripción:</strong> Familia de plantas con flores de gran belleza y diversidad.</li>
+                                                <li><strong>Importancia:</strong> Cundinamarca es un centro de diversidad de orquídeas, con muchas especies endémicas de gran valor ornamental y científico.</li>                                               
+                                              </li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  </div>
+
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/planta6.png" alt="Uchuva" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Uchuva (Physalis peruviana)</strong>  
+                                                <br>
+                                                <br>                                             
+                                                <li><strong>Descripción:</strong> Fruto pequeño, redondo y amarillo, cubierto por un cáliz.</li>
+                                                <li><strong>Importancia:</strong> Fruta exótica con gran valor nutricional, rica en vitaminas y antioxidantes, exportada a mercados internacionales.</li>                                           
+                                              </li>
+                                          </ul>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </section>
+                        <br>
+                            </section>
+                        </div>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d508580.30182156607!2d-74.0097858006915!3d5.2180650755492435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e3f28eb1616af2b%3A0x933cbcb5fad108ed!2scundinamarca!3m2!1d5.026002999999999!2d-74.0300122!4m5!1s0x8e69a475f890a283%3A0xffe1255b64bc9ff7!2sboyaca!3m2!1d5.454511!2d-73.362003!5e0!3m2!1ses!2sco!4v1726790894428!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                            <section id="contacto">
+                                <div class="form-container">
+                                    <h2 class="contacto">Contacto</h2>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="form-content">
+                                                <i class="fa-solid fa-user"></i>  <label for="name">Nombre</label>
+                                                  <input type="text" id="name" name="name" placeholder="Nombre" required>
+                                            </div>
+
+                                            <div class="form-content">
+                                                <i class="fa-solid fa-envelope"></i>      <label for="email">Email</label>
+                                                <input type="email" id="email" name="email" placeholder="Correo" required>
+                                            </div>
+                                            <div class="form-content">
+                                                <i class="fa-solid fa-phone"></i>   <label for="tel">Número</label>
+                                                <input type="tel" id="number" name="number" placeholder="Número">
+                                            </div>
+                                        </div>
+                                        <label form="message">Mensaje</label>
+                                        <textarea name="message" id="message" cols="30" row="10" placeholder="Mensaje"></textarea>
+                                        <div class="form-text">
+                                        <input class="btn" type="submit" name="contact" value="Enviar" >
+                                    </form>
+                                </div>
+                        </section>                     
+                        <footer class="footer">
+                            <div clas="containe">
+                                <div class="footer-row">
+                                    <div class="footer-links">
+                                        <h4>Nosotros</h4>
+                                        <ul>
+                                        <li><a href="#">Cundinamarca</a></li>
+                                        <li><a href="#">Numero: 3027283516</a></li>
+                                        <li><a href="#">Dirección:Tranversal 23#1-45</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links">
+                                        <h4>Ayuda</h4>
+                                        <ul>
+                                        <li><a href="#">Preguntas Frecuentes</a></li>
+                                        <li><a href="#">Asesor</a></li>
+                                        <li><a href="#">Campañas</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links">
+                                        <h4>Biodiversidad</h4>
+                                        <ul>
+                                        <li><a href="#introduccion">Introducción</a></li>
+                                        <li><a href="#flora">Flora</a></li>
+                                        <li><a href="#fauna">Fauna</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links">
+                                        <h4>Siguenos</h4>
+                                        <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </footer>
+                        <script src="script.js"></script>
 </body>
 </html>
